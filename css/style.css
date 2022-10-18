@@ -1,0 +1,218 @@
+:root {
+    --azul: #0071b7;
+    --blanco: #FFF;
+    --naranja: #ff4f1e;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--azul);
+    font-family:  'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+h1, h2 {
+    color: var(--blanco);
+    text-align: center;
+    margin: 5rem 0;
+    padding: 1rem;
+}
+h2 {
+    padding-top: 3rem;
+    border-top: 2px solid #00446e;
+}
+h2:first-of-type {
+    border-top: none;
+}
+.caja-curso {
+    background-color: var(--naranja);
+    text-align: center;
+    color: var(--blanco);
+    padding: 5rem;
+}
+.caja-curso h1 {
+    margin: 0;
+}
+.caja-curso p {
+    font-size: 2.4rem;
+}
+.caja-curso a {
+    font-size: 2.4rem;
+    padding: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 0;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.box {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border: 1rem solid #bb2b03;
+}
+p{
+    color: var(--blanco);
+}
+.columna8 {
+    background-color: #FFF;
+    height: 20rem;
+    font-size: 4rem;
+    padding-top: 8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.columna9 {
+    background-color: #FFF;
+    height: 20rem;
+    font-size: 4rem;
+    padding-top: 8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.oferta1 {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.precio1 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+@media ( max-width: 600px ) {
+    .oferta1 {
+        max-width: 30rem;
+    }
+    .precio1 {
+        font-size: 2rem;
+    }
+}
+
+.oferta2 {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+}
+
+.precio2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+@media (min-width: 600px ) {
+    .oferta2 {
+        max-width: 40rem;
+        margin:  0 auto;
+    }
+}
+
+@media (min-width: 800px) {
+    .oferta2 {
+        max-width: 60rem;
+    }
+}
+
+.oferta3 {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.precio3 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+
+@media (max-width:800px) {
+    .oferta3 {
+        max-width: 40rem;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .oferta3 {
+        max-width: 100%;
+    }
+}
+
+.oferta4 {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+}
+
+.precio4 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+@media (min-width: 600px) and (max-width: 800px), (min-width: 1200px)  {
+    .oferta4 {
+        background-color: yellow;
+    }
+}
+
+
+/*
+@media (min-width: 700px) { 
+    .ejemplo {
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 900px) { 
+    .ejemplo {
+        font-size: 4rem;
+    }
+}
+*/
+
+.contenedor-responsive {
+    background-color: #ffffff;
+    width: min(90%, 1000px);
+    height: 400px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) { 
+    .tres-columnas-flex {
+        display: flex;
+        gap: 2rem;
+    }
+    .columna {
+        flex: 1;
+    }
+}
+
+@media (min-width: 768px) { 
+    .tres-columnas-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
